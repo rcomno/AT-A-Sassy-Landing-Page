@@ -1,3 +1,6 @@
+@import "config";
+@import "utilities";
+@import "btnConfig";
 
 * {
   box-sizing: border-box;
@@ -6,20 +9,77 @@
 }
 
 body {
-  background-color: $light-color;
+  background-color: $dark-color;
   font-family: $font-stack;
   line-height: 1;
+  display: inline-block;
 }
 
 img {
-  border-radius: 50%;
+  @include img-style;
 }
 
 a {
   text-decoration: none;
+  color: $primary-color;
+  display: inline-block;
 }
 
-.hero {
+button {
+  @include btn-style;
+}
+
+header.hero {
+
+  h1 {
+    color: $primary-color;
+    @include h1-style;
+  }
+
+  nav {
+    .banner{
+      @include banner;
+    }
+    
+    ul {
+      @include ul-style;
+    }
+  
+    li {
+      display: inline-block;
+    }
+  
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+      color: $primary-color;
+    }
+  }
+  
+  p {
+    color: $primary-color;
+    @include para-style;
+  }
+
+  button.btn1 {
+    background-color: $tertiary-color;
+  }
+
+  button.btn2 {
+    background-color: $secondary-color;
+  }
+
+  button.btn2 a.btn-secondary {
+    color: $dark-color;
+  }
+
+  div.hero-content {
+    display: inline-flex;
+    max-width: 85%;
+    margin: 5%;
+    align-items: center;
+  } 
   // This is where the bulk of the SCSS styling needs to be done
 
   // Take a look at the other files we've built already. How can they be useful here?

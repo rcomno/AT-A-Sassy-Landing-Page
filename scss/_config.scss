@@ -1,0 +1,58 @@
+$font-stack: Trebuchet MS, Arial, sans-serif;
+$light-color: #FFC300;
+$dark-color: #000814;
+$primary-color: #ddebff;
+$secondary-color: #a2d0fc;
+$tertiary-color: #002864;
+
+@mixin btn-style{
+    font-size: 12pt;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 2%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+};
+
+@mixin para-style {
+    font-size: 12pt;
+    padding: 1%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    margin-right: 8px;
+};
+
+@mixin img-style {
+    float: right;
+    border-radius: 50%;
+    max-width: 40%;
+    max-height: 40%;
+    padding: 2%;
+    margin: 2%;
+};
+
+@mixin h1-style {
+    font-size: 36pt;
+    margin: 1%;
+    margin-left: 2%;
+};
+
+@mixin banner {
+    color: $primary-color;
+    font-size: 20pt;
+    float: left;
+    margin-top: 3px;
+};
+
+@mixin ul-style {
+    text-align: right;
+    margin-top: 2px;
+    margin-right: 2%;
+    padding-top: 6px;
+    list-style: none;
+};
